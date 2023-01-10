@@ -1,0 +1,17 @@
+//go:build !no_runtime_type_checking
+
+// The CDK Construct Library that helps you build ECS services using simple extensions
+package awscdkcontainersecsserviceextensions
+
+import (
+	"fmt"
+)
+
+func (i *jsiiProxy_ISubscribable) validateSubscribeParameters(extension QueueExtension) error {
+	if extension == nil {
+		return fmt.Errorf("parameter extension is required, but nil was provided")
+	}
+
+	return nil
+}
+
