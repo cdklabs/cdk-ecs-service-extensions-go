@@ -1,3 +1,4 @@
+// The CDK Construct Library that helps you build ECS services using simple extensions
 package awscdkcontainersecsserviceextensions
 
 import (

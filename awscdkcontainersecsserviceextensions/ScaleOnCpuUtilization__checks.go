@@ -1,6 +1,5 @@
 //go:build !no_runtime_type_checking
 
-// The CDK Construct Library that helps you build ECS services using simple extensions
 package awscdkcontainersecsserviceextensions
 
 import (
