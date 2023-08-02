@@ -13,6 +13,8 @@ type ISubscribable interface {
 	// Experimental.
 	Subscribe(extension QueueExtension) awssqs.IQueue
 	// The `SubscriptionQueue` object for the `ISubscribable` object.
+	// Default: none.
+	//
 	// Experimental.
 	SubscriptionQueue() *SubscriptionQueue
 }

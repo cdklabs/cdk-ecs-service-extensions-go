@@ -13,6 +13,8 @@ type MeshProps struct {
 	// The protocol of the service.
 	//
 	// Valid values are Protocol.HTTP, Protocol.HTTP2, Protocol.TCP, Protocol.GRPC
+	// Default: - Protocol.HTTP
+	//
 	// Experimental.
 	Protocol Protocol `field:"optional" json:"protocol" yaml:"protocol"`
 }

@@ -12,11 +12,15 @@ type TopicSubscriptionProps struct {
 	// Experimental.
 	Topic awssns.ITopic `field:"required" json:"topic" yaml:"topic"`
 	// The user-provided queue to subscribe to the given topic.
+	// Default: none.
+	//
 	// Deprecated: use `topicSubscriptionQueue`.
 	Queue awssqs.IQueue `field:"optional" json:"queue" yaml:"queue"`
 	// The object representing topic-specific queue and corresponding queue delay fields to configure auto scaling.
 	//
 	// If not provided, the default `eventsQueue` will subscribe to the given topic.
+	// Default: none.
+	//
 	// Experimental.
 	TopicSubscriptionQueue *SubscriptionQueue `field:"optional" json:"topicSubscriptionQueue" yaml:"topicSubscriptionQueue"`
 }

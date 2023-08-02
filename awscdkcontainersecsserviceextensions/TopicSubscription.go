@@ -13,9 +13,13 @@ import (
 type TopicSubscription interface {
 	ISubscribable
 	// The queue that subscribes to the given topic.
+	// Default: none.
+	//
 	// Deprecated: use `subscriptionQueue`.
 	Queue() awssqs.IQueue
 	// The subscription queue object for this subscription.
+	// Default: none.
+	//
 	// Experimental.
 	SubscriptionQueue() *SubscriptionQueue
 	// Experimental.

@@ -11,11 +11,15 @@ type AliasedPortProps struct {
 	// Experimental.
 	Alias *string `field:"required" json:"alias" yaml:"alias"`
 	// The traffic port for clients to use to connect to the DNS alias.
+	// Default: - same as containerPort.
+	//
 	// Experimental.
 	AliasPort *float64 `field:"optional" json:"aliasPort" yaml:"aliasPort"`
 	// The protocol to use over the specified port.
 	//
 	// May be one of HTTP, HTTP2, or GRPC.
+	// Default: - none.
+	//
 	// Experimental.
 	AppProtocol awsecs.AppProtocol `field:"optional" json:"appProtocol" yaml:"appProtocol"`
 }

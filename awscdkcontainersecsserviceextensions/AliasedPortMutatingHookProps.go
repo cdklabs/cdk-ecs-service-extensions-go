@@ -15,6 +15,8 @@ type AliasedPortMutatingHookProps struct {
 	// Experimental.
 	PortMappingName *string `field:"required" json:"portMappingName" yaml:"portMappingName"`
 	// The protocol which this port mapping expects to receive.
+	// Default: - none.
+	//
 	// Experimental.
 	Protocol awsecs.AppProtocol `field:"optional" json:"protocol" yaml:"protocol"`
 }

@@ -11,6 +11,8 @@ type SubscriptionQueue struct {
 	// Experimental.
 	Queue awssqs.IQueue `field:"required" json:"queue" yaml:"queue"`
 	// The user-provided queue delay fields to configure auto scaling for the topic-specific queue.
+	// Default: none.
+	//
 	// Experimental.
 	ScaleOnLatency *QueueAutoScalingOptions `field:"optional" json:"scaleOnLatency" yaml:"scaleOnLatency"`
 }
