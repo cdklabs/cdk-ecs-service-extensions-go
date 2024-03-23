@@ -13,7 +13,7 @@ import (
 	constructs "github.com/aws/constructs-go/constructs/v10/jsii"
 )
 
-//go:embed aws-cdk-containers-ecs-service-extensions-2.0.1-alpha.318.tgz
+//go:embed aws-cdk-containers-ecs-service-extensions-2.0.1-alpha.319.tgz
 var tarball []byte
 
 // Initialize loads the necessary packages in the @jsii/kernel to support the enclosing module.
@@ -24,5 +24,5 @@ func Initialize() {
 	constructs.Initialize()
 
 	// Load this library into the kernel
-	_jsii_.Load("@aws-cdk-containers/ecs-service-extensions", "2.0.1-alpha.318", tarball)
+	_jsii_.Load("@aws-cdk-containers/ecs-service-extensions", "2.0.1-alpha.319", tarball)
 }
